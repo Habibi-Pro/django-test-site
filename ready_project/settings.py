@@ -21,7 +21,7 @@ ROOT_URLCONF = 'ready_project.urls'
 
 TEMPLATES = [{
     'BACKEND': 'django.template.backends.django.DjangoTemplates',
-    'DIRS': ['main/templates'],
+     'DIRS': [BASE_DIR / 'main' / 'templates'],
     'APP_DIRS': True,
     'OPTIONS': {
         'context_processors': [
@@ -29,7 +29,7 @@ TEMPLATES = [{
             'django.template.context_processors.request',
             'django.contrib.auth.context_processors.auth',
             'django.contrib.messages.context_processors.messages',
-            'DIRS': [BASE_DIR / 'main' / 'templates'],
+           
 
         ],
     },
